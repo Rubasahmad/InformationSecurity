@@ -99,4 +99,79 @@ body.dark button {
     background-color: #333;
     color: white;
     border: none;
+}   
+
+/* 🌌 Cyber Dashboard Style */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px cyan;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background: cyan;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00ffff;
+    box-shadow: 0 0 15px cyan;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+    border: none;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+#map {
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid cyan;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    animation: spin 1s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
 }
